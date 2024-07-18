@@ -37,8 +37,10 @@ Dan Gopstein, Hongwei Henry Zhou, Phyllis Frankl, and Justin Cappos. 2018.
 Prevalence of Confusing Code in Software Projects: Atoms of Confusion in the Wild.
 In Proceedings of the 15th International Conference on Mining Software Repositories (Gothenburg, Sweden) (MSR ’18).
 Association for Computing Machinery, New York, NY, USA, 281–291.
+https://doi.org/10.1145/3196398.3196432
 
 <a id="2">[2]</a>
 Chris Langhout and Maurício Aniche. 2021. Atoms of Confusion in Java.
 In 2021 IEEE/ACM 29th International Conference on Program Comprehension (ICPC).
 IEEE, New York, NY, USA, 25–35.
+https://doi.org/10.1109/ICPC52881.2021.00012
