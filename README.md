@@ -27,7 +27,7 @@ Gopstein *ea.* [[1]](#1) searched for AoC described in the following way:
 
 Their analyses deals with ratios, and project size should not affect these anlysis. Therefore, the count of AoC is divided by the number of AST nodes to mitigate the effect of commit size on the results.
 
-To the best of our judgement, the Java Lexer tokens resemble C/C++ AST nodes the most, and they are also available to use with the Java AoC detection tool [[2]]. Therefore, we choose the Java Lexer tokens to mitigate the effect of PR size.
+To the best of our judgement, the Java Lexer tokens resemble C/C++ AST nodes the most, and they are also available to use with the Java AoC detection tool [[2]](#2). Therefore, we choose the Java Lexer tokens to mitigate the effect of PR size.
 
 ## AoC and Types of Language
 
