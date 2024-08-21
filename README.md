@@ -38,6 +38,18 @@ To the best of our judgement, the Java Lexer tokens resemble C/C++ AST nodes the
 In this section, we list a few examples of AoC in different [projects](#project-specific-examples) and [languages](#language-specific-examples) to elaborate on how they affect the appearances of AoCs.
 
 ### Project-specific examples
+In this section, we show that developers follow project-specific guidelines and conventions, thus affecting which AoCs are changed more often.
+Here, we show one example from the [Elasticsearch](https://github.com/elastic/elasticsearch) project and another from the [Shardingsphere](https://github.com/apache/shardingsphere) project.
+
+In our paper, we discover that the developers in the Elasticsearch project make frequent changes to the Conditional Operator AoC.
+To be specific, the project use the function `randomBoolean()` which, as the name suggests, generates a random Boolean value, as the condition in a ternary conditional operator expression.
+Such ternary expressions are frequently used in their testing files. In other words, the Conditional Operator AoCs help the developer with their debugging.
+The process of debugging itself is already lengthy and difficult, and the use of ternary operators helps shorten the process.
+With proper formatting, it would not be as confusing.
+
+As for the Shardingsphere project, they had frequent changes to the Pre-Increment/Decrement AoCs, but mostly to two expressions: `++sequenceID` and `++currentSequenceID`, which were all removed during a major refactoring of the code base.
+
+The two examples above show that when considering the relations between AoC changes and other factors, we should also consider project-specific factors.
 
 ### Language-specific examples
 In this section, we show that the appearances of AoCs differ due to different languages.
@@ -68,20 +80,6 @@ This is logically incorrect since, when `x` is an expression instead of a number
 #define ABS(1-2) ((1-2) < 0? (-1-2) : (1-2))
 ```
 which will evaluate to -3. This goes to show that the Macro Operator Precedence AoCs would occur more frequently in C/C++ projects.
-
-### Project-specific examples
-In this section, we show that developers follow project-specific guidelines and conventions, thus affecting which AoCs are changed more often.
-Here, we show one example from the [Elasticsearch](https://github.com/elastic/elasticsearch) project and another from the [Shardingsphere](https://github.com/apache/shardingsphere) project.
-
-In our paper, we discover that the developers in the Elasticsearch project make frequent changes to the Conditional Operator AoC.
-To be specific, the project use the function `randomBoolean()` which, as the name suggests, generates a random Boolean value, as the condition in a ternary conditional operator expression.
-Such ternary expressions are frequently used in their testing files. In other words, the Conditional Operator AoCs help the developer with their debugging.
-The process of debugging itself is already lengthy and difficult, and the use of ternary operators helps shorten the process.
-With proper formatting, it would not be as confusing.
-
-As for the Shardingsphere project, they had frequent changes to the Pre-Increment/Decrement AoCs, but mostly to two expressions: `++sequenceID` and `++currentSequenceID`, which were all removed during a major refactoring of the code base.
-
-The two examples above show that when considering the relations between AoC changes and other factors, we should also consider project-specific factors.
 
 ## Are AoCs related to technical debt?
 Let us consider two things.
