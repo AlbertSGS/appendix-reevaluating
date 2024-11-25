@@ -90,7 +90,7 @@ In turn, it is unlikely that they would invest resources to remove them.
 Hence, we claim that AoCs are not related to technical debt.
 
 ### References
-<a id="1"[1]</a>
+<a id="1">[1]</a>
 V. Bogachenkova, L. Nguyen, F. Ebert, A. Serebrenik and F. Castor. 2022.
 Evaluating Atoms of Confusion in the Context of Code Reviews.
 2022 IEEE International Conference on Software Maintenance and Evolution (ICSME).
